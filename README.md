@@ -2,7 +2,7 @@
 
 > _Uso do `@angular/router`_
 
-[Veja a alternativa mais simples e acredito, melhor aqui](./tree/alt/a)
+[Veja a alternativa mais simples e acredito, melhor aqui](/tree/alt/a)
 
 A proposta é separar o projeto em dois (web e mobile), porém ser possível o reuso de código entre eles. [Exemplo em produção](https://dziul.github.io/angular-mobile-or-web/)
 
