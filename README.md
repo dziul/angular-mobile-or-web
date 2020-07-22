@@ -2,7 +2,7 @@
 
 A proposta é separar o projeto em dois (web e mobile), porém ser possível o reuso de código entre eles. [Exemplo em produção](https://dziul.github.io/angular-mobile-or-web/)
 
-[![preview](./src/assets/images/preview-d.gif)](https://dziul.github.io/angular-mobile-or-web/)
+[![preview](./src/assets/images/preview-e.gif)](https://dziul.github.io/angular-mobile-or-web/)
 
 **Pós:** possibilidade de isolar componentes especifico de cada _device_
 
