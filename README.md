@@ -6,9 +6,13 @@ A proposta é separar o projeto em dois (web e mobile), porém ser possível o r
 
 **Pós:** possibilidade de isolar componentes especifico de cada _device_
 
-**contra (?):** A identificação do _device_ é na inicialização do projeto. (uma única vez).
+~~**contra (?):** A identificação do _device_ é na inicialização do projeto. (uma única vez).~~
 
-> Se estiver em _mobile_ e precisar inspecionar a versão desktop, precisará alterar o tipo do _device_ e refresh no navegador.
+> ~~Se estiver em _mobile_ e precisar inspecionar a versão desktop, precisará alterar o tipo do _device_ e refresh no navegador.~~
+
+Primeira abordagem foi usar condicional direto no `loadChildren`, porém no ambiente prod , a compilação `aot`, estava dando `Error: Runtime compiler is not loaded`.
+
+Feito outra abordagem, no qual usa diretiva e serviço. Com isso é possível alterar os projeto em execução.
 
 <!--
 
