@@ -1,1 +1,0 @@
-function _classCallCheck(n,c){if(!(n instanceof c))throw new TypeError("Cannot call a class as a function")}(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{Grgp:function(n,c,o){"use strict";o.r(c),o.d(c,"MobileModule",(function(){return a}));var a=function n(){_classCallCheck(this,n)}}}]);

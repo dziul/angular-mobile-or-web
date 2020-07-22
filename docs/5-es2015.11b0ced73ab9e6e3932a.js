@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{Grgp:function(n,o,s){"use strict";s.r(o),s.d(o,"MobileModule",(function(){return c}));class c{}}}]);
