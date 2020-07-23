@@ -1,0 +1,32 @@
+%common {
+  padding: 4px;
+}
+
+.alert {
+  background: red;
+  color: white;
+  border-color: blue;
+  @extend %common;
+}
+
+.info {
+  background: blue;
+  color: white;
+  border-color: red;
+  @extend %common;
+}
+
+.warn {
+  background: orange;
+  color: white;
+  border-color: black;
+  @extend %common;
+}
+
+.button-close {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-left: 12px;
+  border-radius: 200px;
+  border: 1px solid;
+}

@@ -1,4 +1,4 @@
-# Mobile or Web - Alternative A
+# Mobile or Web - Alternative C
 
 > _Uso do `@angular/router`_
 
@@ -7,6 +7,10 @@ A proposta é separar o projeto em dois (web e mobile), porém ser possível o r
 [![preview](./src/assets/images/preview-e.gif)](https://dziul.github.io/angular-mobile-or-web/)
 
 **Pós:** possibilidade de isolar componentes especifico de cada _device_
+
+Possibilidade de patronizar os componentes mobile e web. Alguns caso há componentes iguais, que entrega o mesmo valor de negócio, porém com propriedades diferentes.
+
+A ideia foi usar como base os componentes web, para adaptar os componentes mobile.
 
 <!--
 

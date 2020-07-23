@@ -25,9 +25,10 @@ const routesMobile: Routes = [
 })
 export class AppRoutingModule {
   private deviceChange: boolean;
+  private isMobile = Boolean(window.navigator.maxTouchPoints);
 
   constructor(private router: Router) {
-    this.changeConfig(Boolean(window.navigator.maxTouchPoints));
+    this.changeConfig(this.isMobile);
     this.checkDevice().subscribe((isMobile) => this.changeConfig(isMobile));
   }
 
@@ -48,7 +49,7 @@ export class AppRoutingModule {
 
     if (this.deviceChange !== isMobile) {
       if (typeof this.deviceChange !== 'undefined') {
-        // evita executar na inicializacao do router
+        // evita executar na inicialização do router
         this.router.navigateByUrl(this.router.url);
       }
       this.deviceChange = isMobile;
