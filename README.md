@@ -2,11 +2,11 @@
 
 > _Uso do `@angular/router`_
 
-A proposta é separar o projeto em dois (web e mobile), porém ser possível o reuso de código entre eles. [Exemplo em produção](https://dziul.github.io/angular-mobile-or-web/)
+A sugestão essa **alternativa**, é utilizar 2 modulos (web/mobile), no qual o router é responsável por qual carregar.
 
-[![preview](./src/assets/images/preview-e.gif)](https://dziul.github.io/angular-mobile-or-web/)
+**pós**: estrutura fica mais limpa e fácil entendimento.
 
-**Pós:** possibilidade de isolar componentes especifico de cada _device_
+**contra** não dá para intercalar entre web/mobile, como é feito na _alt/a_ e _alt/c_ - isso é ideal apenas para debugar
 
 <!--
 

@@ -7,14 +7,15 @@ import { map } from 'rxjs/operators';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./web/web.module').then((m) => m.WebModule),
+    loadChildren: () => import('./example/example.module').then((m) => m.ExampleModule),
   },
 ]; // sets up routes constant where you define your routes
 
 const routesMobile: Routes = [
   {
     path: '',
-    loadChildren: () => import('./mobile/mobile.module').then((m) => m.MobileModule),
+    loadChildren: () =>
+      import('./example/example-mobile.module').then((m) => m.ExampleMobileModule),
   },
 ];
 

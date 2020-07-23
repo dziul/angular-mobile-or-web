@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WebComponent } from './web.component';
+import { InternalComponent } from './internal.component';
 
-describe('WebComponent', () => {
-  let component: WebComponent;
-  let fixture: ComponentFixture<WebComponent>;
+describe('InternalComponent', () => {
+  let component: InternalComponent;
+  let fixture: ComponentFixture<InternalComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WebComponent ]
+      declarations: [ InternalComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WebComponent);
+    fixture = TestBed.createComponent(InternalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
