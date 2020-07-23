@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'; // CLI imports router
 
-import { ExampleMobileComponent } from './example.component';
+import { ExampleMobileComponent } from './example-mobile.component';
 
 const routes: Routes = [
   {
@@ -10,7 +10,6 @@ const routes: Routes = [
   },
 ];
 
-// configures NgModule imports and exports
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],

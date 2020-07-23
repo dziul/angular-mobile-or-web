@@ -28,12 +28,16 @@ const routesMobile: Routes = [
       {
         path: '',
         loadChildren: () =>
-          import('./example/example-mobile.module').then((m) => m.ExampleMobileModule),
+          import('./example/example-mobile/example-mobile.module').then(
+            (m) => m.ExampleMobileModule
+          ),
       },
       {
         path: 'internal',
         loadChildren: () =>
-          import('./example/internal/internal-mobile.module').then((m) => m.InternalMobileModule),
+          import('./example/internal/internal-mobile/internal-mobile.module').then(
+            (m) => m.InternalMobileModule
+          ),
       },
     ],
   },

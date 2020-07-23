@@ -10,5 +10,3 @@ export class InternalComponent implements OnInit {
 
   ngOnInit() {}
 }
-
-export class InternalMobileComponent extends InternalComponent {}

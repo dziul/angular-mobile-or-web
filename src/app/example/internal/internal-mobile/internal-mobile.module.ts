@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { SharedMobileModule } from 'src/app/shared/shared-mobile.module';
 
-import { InternalMobileComponent } from './internal.component';
+import { InternalMobileComponent } from './internal-mobile.component';
 import { InternalRoutingMobileModule } from './internal.routing-mobile.module';
 
 @NgModule({

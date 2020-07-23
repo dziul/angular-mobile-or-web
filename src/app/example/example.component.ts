@@ -10,5 +10,3 @@ export class ExampleComponent implements OnInit {
 
   ngOnInit() {}
 }
-
-export class ExampleMobileComponent extends ExampleComponent {}
