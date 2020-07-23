@@ -1,4 +1,4 @@
-# Mobile or Web - Alternative A
+# Mobile or Web - Alternative B
 
 ![preview](./src/assets/images/preview-f.gif)
 
