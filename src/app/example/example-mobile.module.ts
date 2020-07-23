@@ -2,11 +2,11 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { SharedMobileModule } from '../shared/shared-mobile.module';
-import { ExampleComponent } from './example.component';
-import { ExampleRoutingModule } from './example.routing.module';
+import { ExampleMobileComponent } from './example.component';
+import { ExampleRoutingMobileModule } from './example.routing-mobile.module';
 
 @NgModule({
-  declarations: [ExampleComponent],
-  imports: [CommonModule, ExampleRoutingModule, SharedMobileModule],
+  declarations: [ExampleMobileComponent],
+  imports: [CommonModule, ExampleRoutingMobileModule, SharedMobileModule],
 })
 export class ExampleMobileModule {}

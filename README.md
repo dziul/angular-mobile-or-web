@@ -2,14 +2,16 @@
 
 > _Uso do `@angular/router`_
 
-A sugestão essa **alternativa**, é utilizar 2 modulos (web/mobile), no qual o router é responsável por qual carregar.
+A sugestão essa **alternativa**, é utilizar 2 módulos (web/mobile), no qual o router é responsável por qual carregar.
 
 **pós**: estrutura fica mais limpa e fácil entendimento.
 
 **contra** não dá para intercalar entre web/mobile, como é feito na _alt/a_ e _alt/c_ - isso é ideal apenas para debugar
 
-<!--
+**relatórios**
 
+- em prod, dispara erro de componente N estar em dois módulos. Para "burlar" isso, [usado essa sugestão](https://github.com/angular/angular/issues/10646#issuecomment-239181520). No qual a solução é extender.
+<!--
 
 # MobileOrWeb
 
