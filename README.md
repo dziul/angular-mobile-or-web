@@ -1,8 +1,17 @@
 # Mobile or Web - Alternative A
 
+![preview](./src/assets/images/preview-f.gif)
+
 > _Uso do `@angular/router`_
 
-A sugestão essa **alternativa**, é utilizar 2 módulos (web/mobile), no qual o router é responsável por qual carregar.
+A sugestão dessa **alternativa**
+
+| arquivos                                   | descrição                                                   |
+| ------------------------------------------ | ----------------------------------------------------------- |
+| `*.routing.ts` e `*-mobile.routing.ts`     | configuração do roteamento                                  |
+| `*.module.ts` e `*-mobile.module.ts`       | configuração de módulos. Diferencial é os _imports_         |
+| `*.component.ts` e `*-mobile.component.ts` | `*-mobile.component*` apenas estende `*.component`          |
+| `*.component.html`                         | ambos usam o mesmo. Os seletores precisam existir em ambos. |
 
 **pós**: ~~estrutura fica mais limpa e fácil entendimento~~.
 
