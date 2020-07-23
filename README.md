@@ -4,9 +4,9 @@
 
 A sugestão essa **alternativa**, é utilizar 2 módulos (web/mobile), no qual o router é responsável por qual carregar.
 
-**pós**: estrutura fica mais limpa e fácil entendimento.
+**pós**: ~~estrutura fica mais limpa e fácil entendimento~~.
 
-**contra** não dá para intercalar entre web/mobile, como é feito na _alt/a_ e _alt/c_ - isso é ideal apenas para debugar
+**contra** ~~não dá para intercalar entre web/mobile, como é feito na _alt/a_ e _alt/c_ - isso é ideal apenas para debugar~~
 
 **relatórios**
 
