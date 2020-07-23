@@ -1,6 +1,8 @@
 # Mobile or Web - Alternative A
 
+
 ![preview](./src/assets/images/preview-f.gif)
+
 
 > _Uso do `@angular/router`_
 
