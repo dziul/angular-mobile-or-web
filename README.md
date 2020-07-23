@@ -1,25 +1,28 @@
-# Mobile or Web
+# Mobile or Web - Alternative A
+
+
+![preview](./src/assets/images/preview-f.gif)
+
 
 > _Uso do `@angular/router`_
 
-**[Clique aqui para ver a alternativa mais simples e acredito, melhor.](https://github.com/dziul/angular-mobile-or-web/tree/alt/a)**
+A sugestão dessa **alternativa**
 
-A proposta é separar o projeto em dois (web e mobile), porém ser possível o reuso de código entre eles. [Exemplo em produção](https://dziul.github.io/angular-mobile-or-web/)
+| arquivos                                   | descrição                                                   |
+| ------------------------------------------ | ----------------------------------------------------------- |
+| `*.routing.ts` e `*-mobile.routing.ts`     | configuração do roteamento                                  |
+| `*.module.ts` e `*-mobile.module.ts`       | configuração de módulos. Diferencial é os _imports_         |
+| `*.component.ts` e `*-mobile.component.ts` | `*-mobile.component*` apenas estende `*.component`          |
+| `*.component.html`                         | ambos usam o mesmo. Os seletores precisam existir em ambos. |
 
-[![preview](./src/assets/images/preview-e.gif)](https://dziul.github.io/angular-mobile-or-web/)
+**pós**: ~~estrutura fica mais limpa e fácil entendimento~~.
 
-**Pós:** possibilidade de isolar componentes especifico de cada _device_
+**contra** ~~não dá para intercalar entre web/mobile, como é feito na _alt/a_ e _alt/c_ - isso é ideal apenas para debugar~~
 
-~~**contra (?):** A identificação do _device_ é na inicialização do projeto. (uma única vez).~~
+**relatórios**
 
-> ~~Se estiver em _mobile_ e precisar inspecionar a versão desktop, precisará alterar o tipo do _device_ e refresh no navegador.~~
-
-Primeira abordagem foi usar condicional direto no `loadChildren`, porém no ambiente prod , a compilação `aot`, estava dando `Error: Runtime compiler is not loaded`.
-
-Feito outra abordagem, no qual usa diretiva e serviço. Com isso é possível alterar os projeto em execução.
-
+- em prod, dispara erro de componente N estar em dois módulos. Para "burlar" isso, [usado essa sugestão](https://github.com/angular/angular/issues/10646#issuecomment-239181520). No qual a solução é extender.
 <!--
-
 
 # MobileOrWeb
 
@@ -48,3 +51,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md). -->
+
+### Referência
+
+- [Router](https://angular.io/api/router/Router)

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { AlertComponent } from './components/web/alert/alert.component';
+import { AlertComponent } from './components/mobile/alert/alert.component';
 
 const components = [AlertComponent];
 
@@ -10,4 +10,4 @@ const components = [AlertComponent];
   exports: [...components],
   imports: [CommonModule],
 })
-export class SharedModule {}
+export class SharedMobileModule {}
