@@ -21,7 +21,7 @@ A sugestão dessa **alternativa**
 
 **relatórios**
 
-- em prod, dispara erro de componente N estar em dois módulos. Para "burlar" isso, [usado essa sugestão](https://github.com/angular/angular/issues/10646#issuecomment-239181520). No qual a solução é extender.
+- em prod, estava disparando erro de componente N estar em dois módulos. Para "burlar", [foi usado essa sugestão](https://github.com/angular/angular/issues/10646#issuecomment-239181520), no qual a solução é extender.
 <!--
 
 # MobileOrWeb
