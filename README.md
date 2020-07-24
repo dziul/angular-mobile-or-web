@@ -10,7 +10,7 @@ A sugestão dessa **alternativa**
 
 | arquivos                                   | descrição                                                   |
 | ------------------------------------------ | ----------------------------------------------------------- |
-| `*.routing.ts` e `*-mobile.routing.ts`     | configuração do roteamento                                  |
+| `*.routing.module.ts` e `*-mobile.routing.module.ts`     | configuração do roteamento                                  |
 | `*.module.ts` e `*-mobile.module.ts`       | configuração de módulos. Diferencial é os _imports_         |
 | `*.component.ts` e `*-mobile.component.ts` | `*-mobile.component*` apenas estende `*.component`          |
 | `*.component.html`                         | ambos usam o mesmo. Os seletores precisam existir em ambos. |
