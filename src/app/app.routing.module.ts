@@ -49,34 +49,36 @@ const routesMobile: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {
-  private deviceChange: boolean;
+  private regexMobile = /mobile|android|iphone|ipad|ipod/i;
+  private cache: boolean;
 
   constructor(private router: Router) {
-    this.changeConfig(Boolean(window.navigator.maxTouchPoints));
-    this.checkDevice().subscribe((isMobile) => this.changeConfig(isMobile));
+    this.changeConfig(window.navigator.userAgent);
+    this.checkDevice().subscribe((agent) => {
+      this.changeConfig(agent);
+    });
   }
 
   checkDevice() {
     return fromEvent(window, 'resize').pipe(
-      map((event: EventWindow) => {
-        return Boolean(event.target.navigator.maxTouchPoints);
-      })
+      map((event: EventWindow) => event.target.navigator.userAgent)
     );
   }
 
-  changeConfig(isMobile: boolean) {
+  changeConfig(agent: string) {
+    const isMobile = this.regexMobile.test(agent);
     if (isMobile) {
       this.router.resetConfig(routesMobile);
     } else {
       this.router.resetConfig(routes);
     }
 
-    if (this.deviceChange !== isMobile) {
-      if (typeof this.deviceChange !== 'undefined') {
+    if (this.cache !== isMobile) {
+      if (typeof this.cache !== 'undefined') {
         // evita executar na inicializacao do router
         this.router.navigateByUrl(this.router.url);
       }
-      this.deviceChange = isMobile;
+      this.cache = isMobile;
     }
   }
 }
